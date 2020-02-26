@@ -41,7 +41,6 @@ for arg in sys.argv:
           assignment = arg[2:]
 locatpath = None
 print(assignment, coursecode, filename)
-#print(len(sys.argv))
 
 c = Connection
 
@@ -142,8 +141,8 @@ try:
           else:
                commands[command]()
           
-#except IOError:
-     #print("Error: Invalid path or file")
+except IOError:
+     print("Error: Invalid path or file")
 except paramiko.AuthenticationException:
      print("Error: Incorrect username or password")
 except NameError:
