@@ -14,8 +14,8 @@ command = sys.argv[1]
 user = sys.argv[2]
 password = sys.argv[3]
 filename = ""
-lpath = "" + filename
-rpath = filename
+lpath = "" 
+rpath = ""
 assignment=""
 coursecode = ""
 
@@ -40,7 +40,11 @@ for arg in sys.argv:
      if(arg.startswith("a=")):
           assignment = arg[2:]
 locatpath = None
-print(assignment, coursecode, filename)
+if lpath = "":
+     lpath = "" + filename
+if rpath = "":
+     rpath = filename
+print(assignment, coursecode, filename, lpath, rpath)
 
 c = Connection
 
