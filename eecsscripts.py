@@ -40,11 +40,11 @@ for arg in sys.argv:
      if(arg.startswith("a=")):
           assignment = arg[2:]
 locatpath = None
-if lpath = "":
+if lpath == "":
      lpath = "" + filename
-if rpath = "":
+if rpath == "":
      rpath = filename
-print(assignment, coursecode, filename, lpath, rpath)
+#print(assignment, coursecode, filename, lpath, rpath)
 
 c = Connection
 
